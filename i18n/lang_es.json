@@ -1,0 +1,175 @@
+{
+    "common": {
+        "error": {
+            "title": "Error",
+            "generic_message": "Algo ha ido mal. Contacte con el administrador."
+        },
+        "info": {
+            "title": "Información",
+            "generic_message": "Algo ha ido mal. Contacte con el administrador."
+        },
+        "button": {
+            "save": "Guardar",
+            "ok": "Aceptar",
+            "cancel": "Cancelar",
+            "start": "Iniciar",
+            "stop": "Detener",
+            "delete": "Eliminar",
+            "edit": "Editar",
+            "back": "Volver",
+            "access": "Acceder"
+        },
+        "question": "¿Está seguro?",
+        "success": "Éxito",
+        "yes": "Sí",
+        "no": "No",
+        "options": "Opciones",
+        "copy_content": "Copiar contenido",
+        "copied": "Copiado",
+        "back_to_default": "Reestablecer valor predeterminado"
+    },
+    "menu": {
+        "home": "Confirmación Bolsas",
+        "monitor": "Procesos",
+        "config": "Configuración",
+        "database_status": "Estado conexión BD",
+        "logout": "Cerrar sesión",
+        "logout_successful": "Sesión cerrada."
+    },
+    "samples": {
+        "title": "Confirmación Bolsas",
+        "report": "Informe",
+        "report_description": "Generar informe con los datos de la fecha seleccionada",
+        "report_no_data": "Se necesitan datos para poder generar un informe",
+        "messages": {
+            "no_data": "No se han encontrado datos para los filtros especificados.",
+            "select_report_date": "Debes seleccionar una fecha para poder generar un informe"
+        },
+        "filter": {
+            "date": "Fecha",
+            "date_placeholder": "Filtrar por fecha"
+        },
+        "columns": {
+            "sample": "Muestra",
+            "expected": "Esperado",
+            "analyzer": "Analizador",
+            "date": "Fecha Resultado",
+            "profile": "Perfil",
+            "received": "Recibido",
+            "discrepancy": "Discrepancia"
+        },
+        "discrepancies": {
+            "error": "ERROR",
+            "match": "MATCH",
+            "pending": "PENDIENTE"
+        }
+    },
+    "monitor": {
+        "title": "Procesos",
+        "messages": {
+            "no_data": "No se han encontrado datos para los filtros especificados.",
+            "process_started": "El proceso {name} se ha iniciado correctamente.",
+            "process_stopped": "El proceso {name} se ha detenido correctamente.",
+            "update_success": "El proceso {name} se ha actualizado correctamente.",
+            "update_error": "El proceso {name} no se ha actualizado.",
+            "delete_warning": "Esta acción eliminará el proceso de forma permanente.",
+            "delete_success": "Proceso eliminado.",
+            "create_success": "Proceso {name} creado.",
+            "name_in_use": "Ya existe un proceso con ese nombre",
+            "missing_field": "Faltan campos requeridos."
+        },
+        "columns": {
+            "name": "Nombre",
+            "type": "Tipo",
+            "path": "Carpeta de lectura",
+            "active": "Estado",
+            "destination_path": "Destino procesados",
+            "error_destination_path": "Destino errores",
+            "concurrency": "Concurrencia",
+            "encoding": "Codificación",
+            "status": {
+                "active": "Activo",
+                "stopped": "Detenido"
+            }
+        },
+        "processed_files": {
+            "title": "Documentos procesados por *{process}*",
+            "columns": {
+                "name": "Nombre",
+                "datetime": "Lectura",
+                "content": "Contenido",
+                "status": {
+                    "title": "Estado",
+                    "processed": "Procesado",
+                    "duplicate": "Duplicado",
+                    "processed*": "Proc. Parcial",
+                    "pending": "Pendiente",
+                    "error": "Error"
+                }
+            },
+            "file_content": "Contenido del documento *{fileName}* (*{format}*)",
+            "button": "Ver documentos procesados"
+        },
+        "form": {
+            "edit": "Edición proceso *{process}*",
+            "add": "Añadir proceso",
+            "destination_description": "Las rutas son compatibles con los patrones glob.\nEjemplo: C:\\files\\*.txt",
+            "empty_destination": "Destino de los documentos una vez leídos. Se eliminarán si el campo queda vacío.",
+            "empty_error_destination": "Destino de los documentos que dan error una vez procesados. Si el campo queda vacío, no se hará nada con el contenido del documento.",
+            "concurrency": "Cuantos archivos serán leídos simultáneamente.",
+            "type_description": "Seleccionar tipo de documento a procesar",
+            "mapping": "Mapeo de RH",
+            "mapping_description": "Símbolo correspondiente al apartado RH del informe del analizador.",
+            "pos": "Positivo",
+            "neg": "Negativo"
+        }
+    },
+    "configuration": {
+        "title": "Configuración",
+        "messages": {
+            "update_success": "Parámetros de configuración modificados correctamente"
+        },
+        "form": {
+            "process_update_timeout": "Intervalo de actualización de procesos",
+            "process_update_timeout_description": "Tiempo de espera (ms) entre las peticiones a la base de datos buscando actualizaciones en los procesos.",
+            "file_process_timeout": "Intervalo de procesado de documentos",
+            "file_process_timeout_description": "Tiempo de espera (ms) entre las peticiones a la base de datos buscando archivos pendientes de procesar.",
+            "report_profile": "Filtrado de perfil",
+            "report_profile_description": "Perfil de las muestras que se emplearán a la hora de mostrar datos y generar informes. \n En caso de no indicar ninguno, se mostrarán todos los datos.",
+            "report_profile_placeholder": "Seleccionar o escribir perfil",
+            "report_profile_available": "Perfiles con documentos procesados"
+        }
+    },
+    "table": {
+        "pagination": "Mostrando *{firstRowNum}* - *{lastRowNum}* de *{maxRows}* resultados",
+        "page_size": "Resultados por página",
+        "global_filter": "Buscar...",
+        "no_data": "No hay datos"
+    },
+    "auth": {
+        "title": "Autenticación",
+        "input": "Contraseña de acceso a la configuración",
+        "messages": {
+            "wrong_password_title": "Contraseña errónea",
+            "wrong_password_description": "Inténtalo de nuevo con otra contraseña.",
+            "session_expired_title": "Sesión expirada",
+            "session_expired_description": "Es necesario introducir de nuevo la contraseña de configuración.",
+            "permission_error_title": "Error de permisos",
+            "permission_error_description": "El token proporcionado ha caducado, debe introducir de nuevo la contraseña de acceso a configuración. Si el problema persiste, contacte con un administrador."
+        }
+    },
+    "template": {
+        "title": "Verificación de muestras",
+        "sample_id": "ID muestra",
+        "expected_group": "Grupo bolsa",
+        "analizer_serial": "NS Analizador",
+        "test_datetime": "Fecha test",
+        "profile": "Perfil",
+        "received": "Recibido",
+        "discrepancy": "Discrepancia",
+        "report_datetime": "Informe creado el",
+        "filter_date": "filtrando los datos del",
+        "page": "Página",
+        "of": "de"
+    }
+}

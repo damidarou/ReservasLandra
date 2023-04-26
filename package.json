@@ -1,0 +1,28 @@
+{
+    "name": "landrusco",
+    "version": "0.2.0",
+    "private": true,
+    "scripts": {
+        "install-view": "cd frontend && npm install",
+        "install-extsample": "cd extensions/extsample && npm install",
+        "test-extsample": "cd extensions/extsample && mocha test --exit ",
+        "cloud": "neu run --frontend-lib-dev -- --mode=cloud",
+        "window": "neu run --frontend-lib-dev -- --mode=window --window-enable-inspector=true",
+        "view": "cd frontend/ && npm run dev",
+        "buildview": "cd frontend/ && npm run build",
+        "version": "git add -A",
+        "postversion": "git push --follow-tags ",
+        "clean": "npx --yes rimraf dist",
+        "prebuild": "npm run clean",
+        "build": "npm run buildview && neu build",
+        "release:patch": "npm version patch -m \"Bump version %s\"",
+        "release:minor": "npm version minor -m \"Bump version %s\"",
+        "release:major": "npm version major -m \"Bump version %s\"",
+        "release:alpha": "npm version prerelease --preid=alpha -m \"Bump version %s\"",
+        "release:beta": "npm version prerelease --preid=beta -m \"Bump version %s\"",
+        "release:rc": "npm version prerelease --preid=rc -m \"Bump version %s\""
+    },
+    "dependencies": {
+        "react-router-dom": "^6.10.0"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "applicationId": "js.neutralino.landrusco",
+    "version": "1.0.0",
+    "defaultMode": "window",
+    "documentRoot": "/frontend/dist/",
+    "url": "/",
+    "port": 3536,
+    "enableServer": true,
+    "enableNativeAPI": true,
+    "enableExtensions": true,
+    "tokenSecurity": "none",
+    "nativeAllowList": ["app.*", "debug.*", "os.*", "filesystem.*", "extensions.*"],
+    "globalVariables": {
+        "TEST": "Test Value2"
+    },
+    "modes": {
+        "window": {
+            "title": "Landrusco",
+            "width": 1280,
+            "height": 900,
+            "minWidth": 640,
+            "minHeight": 480,
+            "icon": "/frontend/public/android-chrome-192x192.png",
+            "enableInspector": false
+        },
+        "browser": {},
+        "cloud": {}
+    },
+    "cli": {
+        "binaryName": "landrusco",
+        "resourcesPath": "/frontend/dist/",
+        "extensionsPath": "/extensions/",
+        "clientLibrary": "/frontend/public/neutralino.js",
+        "binaryVersion": "4.7.0",
+        "clientVersion": "3.5.0",
+        "frontendLibrary": {
+            "patchFile": "/frontend/index.html",
+            "devUrl": "http://localhost:5173"
+        }
+    },
+    "extensions": [
+        {
+            "id": "js.neutralino.extsample",
+            "command": "node ${NL_PATH}/extensions/extsample/index.js"
+        }
+    ]
+}

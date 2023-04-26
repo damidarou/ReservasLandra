@@ -1,0 +1,186 @@
+:root {
+  --branco: white;
+  --negro: black;
+  --chrome: #fcfcfc;
+  --gris: #848484;
+  --grisclaro: #cbcbcb;
+  --azul: #4a8fba;
+  --azulclaro: #6fb7e2;
+  --vermello: red;
+}
+
+header {
+  display: flexbox;
+  margin-top: -0.5em;
+}
+
+.menu {
+  display: flex;
+  margin-top: 5%;
+}
+
+.marco {
+  height: 5em;
+  width: 80em;
+  background-color: var(--azul);
+  display: flex;
+  margin-top: 0em;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1.5em;
+}
+
+.marco a {
+  text-decoration: none;
+  color: var(--negro);
+  width: 36em;
+  display: flex;
+}
+
+.marco a img {
+  width: 5.8em;
+  height: 5.8em;
+}
+
+.marco a p {
+  margin-left: 2%;
+  margin-top: 1em;
+  font-size: 2vw;
+}
+
+p#usuario {
+  width: 13em;
+  margin-top: -0.25em;
+  position: relative;
+}
+
+a.usuario {
+  font-size: 1.5vw;
+  margin-top: 1.5em;
+  width: 3em;
+}
+
+a.iniciar {
+  margin-top: 2.1em;
+  margin-left: 0em;
+  width: 7em;
+  transition: all .3s ease-in-out;
+}
+
+a.iniciar:hover {
+  transform: scale(1.2);
+}
+
+img#logoUsuario {
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+  margin-top: -2em;
+}
+
+img#logoUsuario2 {
+  width: 3em;
+  height: 3em;
+  margin-left: 6em;
+  margin-top: -2em;
+}
+
+img#cerrarSesion {
+  width: 3em;
+  height: 3em;
+  margin-top: -3em;
+  margin-left: 9.5em;
+  transition: all .3s ease-in-out;
+}
+
+img#cerrarSesion:hover {
+  transform: scale(1.2);
+}
+
+.marco2 {
+  position: relative;
+  background-color: var(--azul);
+  border: 2px solid var(--azul);
+  height: 2em;
+  width: 13em;
+  -webkit-transform: skew(-40deg);
+  -moz-transform: skew(-40deg);
+  -ms-transform: skew(-40deg);
+  -o-transform: skew(-40deg);
+  transform: skew(-40deg);
+  z-index: 3;
+  margin: -4.2em 0 0 -1.4em;
+}
+
+div {
+  font-size: 1.25vw;
+  text-align: center;
+}
+
+.enlace {
+  border: 2px solid var(--azul);
+  background-color: var(--grisclaro);
+  position: relative;
+  height: 1.8em;
+  width: 15em;
+  margin-top: -4em;
+  margin-left: -1em;
+  transform: skew(-50deg);
+  display: inline-flex;
+}
+
+.enlace a {
+  transform: skew(50deg);
+  text-decoration: none;
+  color: var(--negro);
+  position: relative;
+  margin-top: 0.5em;
+  margin-left: 1.7em;
+  height: 1em;
+}
+
+#gestion_reservas {
+  position: relative;
+  z-index: -1;
+  
+  
+}
+
+#gestion_aulas {
+  padding-left: 1.5em;
+  position: relative;
+  z-index: -2;
+  
+}
+
+#aulas {
+  padding-left: 1em;
+  height: 1.8em;
+  width: 9em;
+  margin-top: -4em;
+  margin-left: -1em;
+  transform: skew(-50deg);
+  display: inline-flex;
+}
+
+#reservas {
+  padding-left: 0.5em;
+  height: 1.8em;
+  width: 9em;
+  margin-top: -4em;
+  margin-left: -1em;
+  transform: skew(-50deg);
+  display: inline-flex;
+}
+
+#enlaceInstituto {
+  position: relative;
+  margin-left: 1em;
+  margin-top: 0.2em;
+  z-index: 4;
+}
+
+.enlace:hover {
+  background-color: var(--gris);
+}

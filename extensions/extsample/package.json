@@ -1,0 +1,24 @@
+{
+    "name": "extsample",
+    "version": "1.0.0",
+    "description": "Landrusco Extension Sample",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@landra_sistemas/lisco": "^0.2.1-rc.1",
+        "dotenv-defaults": "^5.0.2",
+        "minimist": "^1.2.6",
+        "uuid": "^8.3.2",
+        "websocket": "^1.0.34"
+    },
+    "devDependencies": {
+        "c8": "^7.11.3",
+        "chai": "^4.3.7",
+        "mocha": "^10.0.0",
+        "mocha-teamcity-reporter": "^4.2.0"
+    }
+}
